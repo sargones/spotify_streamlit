@@ -1,0 +1,9 @@
+import streamlit as st
+import pandas as pd
+
+
+
+# artist_df = pd.read_csv('artist_details.csv')
+# artist_df = artist_df.drop(columns=['ID'])
+# artist_df = artist_df.rename(columns={'name':'Band', 'genres':'Genres', 'popularity': 'Popularity', 'followers':'Followers'})
+st.title("This is a title")
