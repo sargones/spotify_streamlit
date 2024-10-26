@@ -5,7 +5,7 @@ env:
   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
 on:
-  workflow_call:
+  workflow_dispatch
 
 
 jobs:
