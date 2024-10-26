@@ -16,8 +16,8 @@ from streamlit import secrets
 # client_id = os.environ['CLIENT_ID']
 # client_secret = os.environ['CLIENT_SECRET']
 
-client_id = os.environ.get('CLIENT_ID')
-client_secret = os.environ.get('CLIENT_SECRET')
+client_id = os.environ.get(CLIENT_ID)
+client_secret = os.environ.get(CLIENT_SECRET)
 
 
 #functions
