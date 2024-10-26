@@ -8,7 +8,7 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v4
         env:
-        CLIENT_ID: ${{ secrets.CLIENT_ID }}
-        CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
 
