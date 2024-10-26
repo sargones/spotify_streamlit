@@ -12,8 +12,11 @@ from streamlit import secrets
 # client_secret = os.getenv("CLIENT_SECRET")
 # print(client_id, client_secret)
 
-client_id = os.environ['CLIENT_ID']
-client_secret = os.environ['CLIENT_SECRET']
+# client_id = os.environ['CLIENT_ID']
+# client_secret = os.environ['CLIENT_SECRET']
+
+client_id = os.environ.get('CLIENT_ID')
+client_secret = os.environ.get('CLIENT_SECRET')
 
 
 #functions
