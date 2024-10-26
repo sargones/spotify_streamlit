@@ -1,5 +1,5 @@
 # from dotenv import load_dotenv
-# import os
+import os
 import base64
 from requests import post, get
 import json
@@ -12,8 +12,8 @@ from streamlit import secrets
 # client_secret = os.getenv("CLIENT_SECRET")
 # print(client_id, client_secret)
 
-client_id = secrets.CLIENT_ID
-client_secret = secrets.CLIENT_SECRET
+client_id = os.environ['CLIENT_ID']
+client_secret = os.environ['CLIENT_SECRET']
 
 
 #functions
