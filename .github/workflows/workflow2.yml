@@ -1,4 +1,4 @@
-name: Secrets
+name: new_Secrets
 
 env:
   CLIENT_ID: ${{ secrets.CLIENT_ID }}
