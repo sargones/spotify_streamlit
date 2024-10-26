@@ -27,10 +27,7 @@ jobs:
         run: python -c "import sys; print(sys.version)"
 
       - name: run code
-        run: import numpy as np
-             import os
-             import pandas as pd
-             import streamlit as st      
+        run: import numpy as np 
              python main.py
 
 
