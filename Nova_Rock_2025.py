@@ -1,14 +1,14 @@
 import streamlit as st
 import pandas as pd
-#from main import artist_df
+from main import artist_df
 
 st.set_page_config(page_title="Nova Rock 2025", page_icon="👋")
 
 st.title("Nova Rock 2025")
 st.subheader("Bands stats")
 
-artist_df = pd.read_csv('artist_details.csv')
-artist_df = artist_df.drop(columns=['ID'])
+#artist_df = pd.read_csv('artist_details.csv')
+#artist_df = artist_df.drop(columns=['ID'])
 artist_df = artist_df.rename(columns={'name':'Band', 'genres':'Genres', 'popularity': 'Popularity', 'followers':'Followers'})
 artist_df = artist_df[['Band', 'Genres', 'Popularity', 'Followers']]
 artist_df['Genres'] = artist_df['Genres'].replace('"','')
@@ -27,7 +27,7 @@ print(artist_genre)
 options = st.multiselect(
     "Select your favorite genres",
     list(artist_genre['Genre'].unique()),
-    #['rock'],
+    ['rock'],
 )
 
 st.dataframe(artist_genre[artist_genre['Genre'].isin(options)], hide_index=True, width = 400)
