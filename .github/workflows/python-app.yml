@@ -33,10 +33,12 @@ jobs:
            CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           pip install numpy
+          python main.py
 #          pip install os
 #          pip install requests
 #          pip install pandas
 #          pip install streamlit
-#          python main.py
+          
+          
 
 
