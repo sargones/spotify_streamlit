@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Run Python Script
         run:
-          python main.py
+          pip install requests
 
 
 
