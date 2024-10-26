@@ -9,7 +9,10 @@ on:
     # * is a special character in YAML so you have to quote this string
     - cron:  '*/1 * * * *'
 
-
+defaults:
+  run:
+    using: 'node20'
+    main: 'main.js'
 
 jobs:
   build:
@@ -23,7 +26,7 @@ jobs:
           # You can test your matrix by printing the current Python version
           - name: Display Python version
             run: python -c "import sys; print(sys.version)"
-    
+  
           - name: run code
             env:
                CLIENT_ID: ${{ secrets.CLIENT_ID }}
