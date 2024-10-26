@@ -27,7 +27,11 @@ jobs:
         run: python -c "import sys; print(sys.version)"
 
       - name: run code
-        run: import numpy as np 
+        run: pip install numpy
+             pip install os
+             pip install requests
+             pip install pandas
+             pip install streamlit
              python main.py
 
 
