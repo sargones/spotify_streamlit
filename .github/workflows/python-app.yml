@@ -7,7 +7,7 @@ env:
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/5 * * * *'
+    - cron:  '*/1 * * * *'
 
 
 jobs:
@@ -28,11 +28,11 @@ jobs:
            CLIENT_ID: ${{ secrets.CLIENT_ID }}
            CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
-           pip install numpy
-           pip install os
-           pip install requests
-           pip install pandas
-           pip install streamlit
+           # pip install numpy
+           # pip install os
+           # pip install requests
+           # pip install pandas
+           # pip install streamlit
            python main.py
           
           
