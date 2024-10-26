@@ -1,4 +1,4 @@
-name: Python package
+name: Secrets
 
 env:
   CLIENT_ID: ${{ secrets.CLIENT_ID }}
