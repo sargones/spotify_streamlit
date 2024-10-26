@@ -5,10 +5,14 @@ env:
   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
 on:
-  workflow_dispatch
+  schedule:
+    - cron:  '*/1 * * * *'
+  
+  #workflow_dispatch
   # push:
   #   branches:
   #     - main
+
 
 jobs:
   build-and-run:
