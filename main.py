@@ -19,8 +19,6 @@ from streamlit import secrets
 client_id = os.environ.get('CLIENT_ID')
 client_secret = os.environ.get('CLIENT_SECRET')
 
-client_id = CLIENT_ID
-client_secret = CLIENT_SECRET
 
 #functions
 def get_token():
