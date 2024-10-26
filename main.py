@@ -1,15 +1,19 @@
-from dotenv import load_dotenv
-import os
+# from dotenv import load_dotenv
+# import os
 import base64
 from requests import post, get
 import json
 import numpy as np
 import pandas as pd
+from streamlit import secrets
 
-load_dotenv()
-client_id = os.getenv("CLIENT_ID")
-client_secret = os.getenv("CLIENT_SECRET")
+# load_dotenv()
+# client_id = os.getenv("CLIENT_ID")
+# client_secret = os.getenv("CLIENT_SECRET")
 # print(client_id, client_secret)
+
+client_id = secrets.CLIENT_ID
+client_secret = secrets.CLIENT_SECRET
 
 
 #functions
