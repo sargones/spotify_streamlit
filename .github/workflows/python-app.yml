@@ -3,7 +3,10 @@ name: Python package
 env:
   CLIENT_ID: ${{ secrets.CLIENT_ID }}
   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
-on: [push]
+
+on:
+  workflow_call:
+
 
 jobs:
   build:
