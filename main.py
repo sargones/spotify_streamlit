@@ -34,7 +34,7 @@ def get_token():
     result = post(url, headers = headers, data = data)
     json_result = json.loads(result.content)
     token = json_result["access_token"]
-    return token
+    return str(token)
 
 def get_auth_header(token):
     return {"Authorization": "Bearer " + token}
