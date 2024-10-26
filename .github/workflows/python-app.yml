@@ -9,6 +9,10 @@ on:
   pull_request:
     branches: [ "master" ]
 
+runs:
+  using: 'node20'
+  main: 'main.js'
+
 env:
   CLIENT_ID: ${{ secrets.CLIENT_ID }}
   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
