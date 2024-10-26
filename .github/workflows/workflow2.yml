@@ -19,4 +19,5 @@ jobs:
         run: |
           pip install numpy
           pip install pandas
+          pip install streamlit
           python main.py
