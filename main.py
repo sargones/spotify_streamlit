@@ -33,8 +33,8 @@ def get_token():
     data = {"grant_type": "client_credentials"}
     result = post(url, headers = headers, data = data)
     json_result = json.loads(result.content)
-    token = json_result["access_token"]
-    return str(token)
+    token = str(json_result["access_token"])
+    return token
 
 def get_auth_header(token):
     return {"Authorization": "Bearer " + token}
