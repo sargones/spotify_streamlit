@@ -1,12 +1,12 @@
 name: Python package
 
-env:
-  CLIENT_ID: ${{ secrets.CLIENT_ID }}
-  CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+# env:
+#   CLIENT_ID: ${{ secrets.CLIENT_ID }}
+#   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
 on:
-  workflow_call
-  #workflow_dispatch
+  #workflow_call
+  workflow_dispatch
 
 
 jobs:
@@ -28,6 +28,9 @@ jobs:
         run: python -c "import sys; print(sys.version)"
 
       - name: run code
+        env:
+           CLIENT_ID: ${{ secrets.CLIENT_ID }}
+           CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
         run: |
           pip install numpy
 #          pip install os
