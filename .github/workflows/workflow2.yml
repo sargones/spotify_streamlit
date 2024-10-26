@@ -4,7 +4,7 @@ env:
   CLIENT_ID: ${{ secrets.CLIENT_ID }}
   CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
 
-on:
+on: [push]
   schedule:
     - cron:  '*/1 * * * *'
   
