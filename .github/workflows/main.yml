@@ -1,0 +1,12 @@
+name: Use secret as input
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Use secret in an action
+        uses: some-action/with-secrets@v1
+        with:
+          CLIENT_ID: ${{ secrets.CLIENT_ID }} # Set secret as input
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }} # Set secret as input
