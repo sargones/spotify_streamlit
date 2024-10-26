@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout
+        uses: actions/checkout@v4.20.0
 
 
     
       - name: Setup Python
-        uses: actions/setup-python
+        uses: actions/setup-python@4.20.0
         with:
           python-version: '3.10'
           
