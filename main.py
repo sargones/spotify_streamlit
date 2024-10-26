@@ -22,6 +22,8 @@ client_secret = os.environ.get('CLIENT_SECRET')
 
 #functions
 def get_token():
+    print(client_id)
+    print(client_secret)
     auth_string = client_id + ":" + client_secret
     auth_bytes = auth_string.encode("utf-8")
     auth_base64 = str(base64.b64encode(auth_bytes), "utf-8")
